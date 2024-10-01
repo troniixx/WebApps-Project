@@ -1,0 +1,43 @@
+.header{
+    text-align: center;
+    background-color: lightblue;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    overflow: hidden; /* Clear floats */
+}
+
+.navbar li {
+    float: right; /* Align items horizontally */
+    position: relative;
+}
+
+.navbar a {
+    padding: 14px 20px;
+    display: block; /* Make the whole area clickable */
+    text-decoration: none;
+    color: black; /* Change to your preferred text color */
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    left: 0; /* Align submenu under parent item */
+}
+
+.navbar li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    display: block; /* Submenu items will be stacked */
+}

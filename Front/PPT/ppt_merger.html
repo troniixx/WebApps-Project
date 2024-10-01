@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NoteMerger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<nav>
+    <ul class="navbar">
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../PDF/pdf_merger.html">Merge PDFs</a></li>
+        <li><a href="ppt_merger.html">Merge PowerPoints</a></li>
+        <li><a href="../start.html">Home</a></li>
+    </ul>
+</nav>
+
+<body>
+    <div class="container">
+        <h1>PPT</h1>
+        <form action="pdf_merger.py" method="post" enctype="multipart/form-data">
+            <input type="file" name="file1" id="file1" required>
+            <input type="file" name="file2" id="file2" required>
+            <input type="submit" value="Merge">
+        </form>
+    </div>
+</body>
